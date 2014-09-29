@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
+<!--声明了文档类型-->
 <!--这里是注释 -->
 <html>
 <title>网页标题</title>
-<body>
+<body bgcolor="white">
 
 <!--id属性,可以用作书签标记，对与用户来讲是隐藏的-->
-<a id="afterhead">ID for mark</a>
-<br />
+<a id="afterhead"></a>
 
 <h1>一级标题，搜索引擎使用标题为网页的结构和内容编制索引</h1>
 <hr><!--下划线-->
@@ -71,7 +71,8 @@ this is a test <sub>下标</sub> test<sup>上标</sup>
 <br />
 
 <!--图片链接-->
-<a href="http://www.baidu.com/" >
+图片链接，点击图片打开新的网页
+<a href="http://www.baidu.com/" target="_blank">
 <img src="http://www.baidu.com/">
 </a>
 <br />
@@ -80,8 +81,12 @@ this is a test <sub>下标</sub> test<sup>上标</sup>
 <a href="http://www.baidu.com/" target="_top">跳出框架</a>
 <br />
 
-<!--创建邮件链接-->
-<a href="mailto:wangmohan@sict.ac.cn" target="_top">mail to wangmohan</a>
+<!--创建邮件链接,%20表示空格-->
+<a href="mailto:wangmohan@sict.ac.cn?Subject=Hello%20mail" target="_top">mail to wangmohan</a>
+<br />
+
+<!--复杂邮件，cc抄送,bcc秘密抄送，subject主题，body内容-->
+<a href="mailto:wangmohan@sict.ac.cn;mqtter@gmail.com?cc=wangmohanxin@163.com&bcc=603307163@qq.com&subject=test%20mail&body=This%20is%20a%20test%20mail" target="_top">Mail to wangmohan directly</a>
 <br />
 
 </body>
