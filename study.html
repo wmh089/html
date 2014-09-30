@@ -2,7 +2,56 @@
 <!--声明了文档类型-->
 <!--这里是注释 -->
 <html>
+<!--html HEAD
+<head>中可以插入脚本，样式文件，及各种meta信息
+标签主要有<title>,<stytle>,<meta><link><script><noscript><base>
+-->
+<head>
+<!--title
+定义了浏览器工具栏的标题
+网页添加收藏夹时，显示在收藏夹的标题
+显示在搜索引擎结果页面的标题
+-->
 <title>网页标题</title>
+
+<!--base
+<base>描述了基本的链接地址/链接目标
+该标签作为html文档中所有的链接标签的默认链接
+？？？？？？？？？
+像是全局变量，后续的href中如果是个相对路径，base中的地址将作为前缀，组成一个新的url进行访问
+-->
+<base href="" target="_blank">
+
+<!--link
+<link>定义了文档与外部资源之间的关系。
+通常用于链接到样式表
+-->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<!--style
+<style>定义了html文档的样式文件引用地址
+在<style>元素中你需要指定样式文件来渲染html文档
+-->
+<style type="text/css">
+body {background-color:yellow}
+p {color:blue}
+</style>
+
+<!--meta
+meta描述了一些基本的元数据
+<meta>提供元数据。元数据不显示在页面上，但会被浏览器解析。
+	通常用于指定网页的描述、关键词、文件的最后修改时间、作者、和其他元数据
+-->
+<!--为搜索引擎定义关键字-->
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<!--为网页定义描述内容-->
+<meta name="description" content="Free web tutorials on html and css">
+<!--定义网页作者-->
+<meta name="author" content="DanielWang">
+<!--每30秒刷新网页-->
+<meta http-equiv="refresh" content="30">
+
+</head>
 <body bgcolor="white">
 
 <!--id属性,可以用作书签标记，对与用户来讲是隐藏的-->
@@ -88,6 +137,7 @@ this is a test <sub>下标</sub> test<sup>上标</sup>
 <!--复杂邮件，cc抄送,bcc秘密抄送，subject主题，body内容-->
 <a href="mailto:wangmohan@sict.ac.cn;mqtter@gmail.com?cc=wangmohanxin@163.com&bcc=603307163@qq.com&subject=test%20mail&body=This%20is%20a%20test%20mail" target="_top">Mail to wangmohan directly</a>
 <br />
+
 
 </body>
 </html>
