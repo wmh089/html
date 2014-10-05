@@ -194,6 +194,7 @@ CSS是为了更好的渲染html元素而引入的
 	rowspan跨行跨列的单元格
 -->
 
+<p>
 <table border="1" cellpadding="10" cellspacing="10">
 <caption>Table Example!</caption>
 <tr>
@@ -210,6 +211,46 @@ CSS是为了更好的渲染html元素而引入的
 	<td>jkl</td>
 	<td>qew</td>
 </tr>
+</p>
+
+<!--列表
+	html支持有序ol、无序ul和定义列表
+	自定义dl，由项目及注释组成
+				dt
+				dd
+	支持嵌套方式
+	
+Q：为什么浏览器显示的时候，我的表格在最下面？？？？？？？？？？？？？？而当前的列表在表格的上面
+-->
+<p>
+<h4>An Unordered List:</h4>
+<ul>
+	<li>Coffee</li>
+	<ul>
+		<li>red</li>
+		<li>white</li>
+		<li>blue</li>
+	</ul>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<ol type=""><!--type默认为数字，可以为AaIi中的任意一个-->
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<ol start="50">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<dl>
+	<dt>Coffee</dt>
+	<dd>-black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>-white cold drink</dd>
+</dl>
+</p>
 
 
 </body>
