@@ -138,6 +138,46 @@ this is a test <sub>下标</sub> test<sup>上标</sup>
 <a href="mailto:wangmohan@sict.ac.cn;mqtter@gmail.com?cc=wangmohanxin@163.com&bcc=603307163@qq.com&subject=test%20mail&body=This%20is%20a%20test%20mail" target="_top">Mail to wangmohan directly</a>
 <br />
 
+<!--CSS
+CSS是为了更好的渲染html元素而引入的
+三种方式添加到html中
+	内敛式样——在html元素中使用style属性
+	内部样式表——在html文档头部<head>区域使用<style>元素来包含CSS
+	外部引用——使用外部的CSS文件
+	
+常见式样
+	font-family字体
+	color颜色
+	font-size字体大小
+	text-align字体对齐，指定文本的水平与垂直对齐方式
+-->
+<p style="color:red;margin-left:20px;">This is a paragraph.</p>
+<h1 style="text-align:center;">Center-aligned heading</h1>
+
+<!--图像
+<img>是空标签，只包含属性，没有闭合标签
+	src
+	alt用来为图像定义一串预备的可替代的文本。由用户定义。当浏览器无法载入图像时，替换文本属性告诉读者他们失去的信息，
+此时，浏览器显示这个替代性的文本而不是图片。
+	height，width设置高度和宽度。指定图像的高度和宽度是一个好习惯。这样页面加载时会保留出指定的尺寸，如果没有指定大小，
+可能会破坏html也面的整体布局。
+	align：当图文同一行时，默认底端对齐，middle为中间对齐，top顶端对齐
+	border设置边框
+-->
+<h2>Myname picture</h2>
+<img border="50" src="img/8737.gif" alt="my name gif" width="" height="">
+<img border="50" src="8738.gif" alt="my name gif" width="" height="">
+<p>This is some test.
+<img src="img/smiley.gif" alt="smiley face" width="32" height="32" align="middle">This is some test.</p>
+<!--创建图像映射
+	在图片的某一个区域内，提供可供点击的区域，对应一个超链接
+-->
+<img src="img/planets.gif" alt="Planets" usemap="#planetmap" width="145" height="126">
+<map name="planetmap">
+	<area shape="ret" coords="0,0,82,126" alt="Sun" href="img/sun.gif">
+	<area shape="circle" coords="90,58,3" alt="Mercury" href="img/merglobe.gif">
+	<area shape="circle" coords="124,58,8" alt="Venus" href="img/venglobe.gif">
+</map>
 
 </body>
 </html>
