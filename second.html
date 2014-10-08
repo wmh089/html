@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>html学习之区块之后</title>
+</head>
+<body>
+<!--html区块学习
+	html元素：块级元素或内联元素     元素就是标签
+	区块元素：通常以新的行来开始和结束，例h1、p、ul、table
+	
+	内联元素：显示时不会以新行开始。例b、td、a、img
+	
+	<div>元素
+		块级元素，用于组合其他html元素的容器。
+		没有特殊含义。浏览器会在其前后显示折行
+		与CSS一起使用，可对大的内容块设置样式属性。
+		文档布局。取代表格定义布局的方法
+		
+	<span>元素
+		内联元素，用于文本的容器
+		没有特定的含义。
+		与CSS一起使用，可用于为部分文本设置样式属性。
+-->
+<h1>html 区块学习</h1>
+<hr>
+<p>This is some text.</p>
+<div style="color:#0000ff">
+	<h3>This is a heading in a div element</h3>
+	<p>This is some text in a div element.</p>
+</div>
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father
+	has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.
+</p>
+
+<h1>html 布局</h1>
+<hr>
+<div id="container" style="width:500px">
+	<div id="header" style="background-color:#FFA500;">
+		<h1 style="margin-botom:0;">Main title of web page</h1>
+	</div>
+	<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+		<b>Menu</b><br>
+		HTML<br>
+		CSS<br>
+		JavaScript
+	</div>
+	
+	<div id="content" style="background-color:#EEEEEE;height:200px;width:100px;float:left;">
+	Content goes here.
+	</div>
+	<p>测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	测试段落，看看出现在什么位置<br>
+	</p>
+	
+	<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+	Copyright @github.com
+	</div>
+</div>
+
+<!--网站布局
+	可以使用div或table完成（坚决不用table）。CSS用于对元素进行定位，或为页面创建背景以及色彩丰富的外观。
+	
+	提示：
+		使用CSS的好处，把CSS代码存放到外部式表中，使得站点容易维护。
+		创建高级的布局很耗时，可以考虑使用模板。然后进行优化即可。
+-->
+
+</body>
+</html>
